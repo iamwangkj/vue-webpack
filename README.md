@@ -4,11 +4,10 @@
 ## 介绍
 webpack从零搭建一个vue、vuex、vue-router的移动端开发模板
 
-### npm init
+### 初始化项目
+npm init
 
 ### 添加eslint检测
-
-
 #### vscode安装eslint插件
 （多看插件的设置说明），设置eslint插件保存时自动修复eslint报错的地方（eslint.autoFixOnSave已弃用，使用以下）
 vscode的设置editor:format on save需要关掉，不然会和eslint的规则冲突
@@ -28,7 +27,6 @@ vscode的设置editor:format on save需要关掉，不然会和eslint的规则�
 "eslint.format.enable": true,
 "editor.formatOnSave": true,
 ```
-
 #### 创建eslint规则
 npm安装eslint到devDependencies（npm i -D eslint），创建eslint规则（npx eslint --init）
 
@@ -108,7 +106,8 @@ module.exports = {
 npx webpack-dev-server --config ./build/webpack.config.js，启动本地服务
 
 
-
+添加vue-router
+npm i -S vue-router
 
 
 

@@ -1,16 +1,12 @@
 <template>
-  <div id="app1">
-    <router-view />
+  <div class="">
+    page about
   </div>
 </template>
 <script>
 export default {
-  name: 'app'
+  name: 'about'
 }
 </script>
 <style lang="scss">
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
 </style>
