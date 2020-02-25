@@ -1,0 +1,28 @@
+{
+  "name": "vue-webpack-template",
+  "version": "1.0.0",
+  "description": "[中文版](README.md) [英文版](README_EN.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamwangkj/vue-webpack-template.git"
+  },
+  "author": "wangkj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamwangkj/vue-webpack-template/issues"
+  },
+  "homepage": "https://github.com/iamwangkj/vue-webpack-template#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.1"
+  }
+}
