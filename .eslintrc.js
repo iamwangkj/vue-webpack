@@ -19,5 +19,7 @@ module.exports = {
     'vue'
   ],
   rules: {
+    'no-var': 'error',
+    'prefer-const': 'error'
   }
 }
