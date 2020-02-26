@@ -72,22 +72,30 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '../src/public/index.html')
+    })
+  ],
   devServer: {
     // 设置服务器访问的基本目录
-    contentBase: path.resolve(__dirname, 'dist'), // 最好设置成绝对路径
+    contentBase: path.resolve(__dirname, '../src/public'), // 最好设置成绝对路径
     // 设置服务器的ip地址,可以是localhost
-    host: 'localhost',
+    host: '0.0.0.0',
     // 设置端口
     port: 3000,
     // 设置自动拉起浏览器
     open: false,
     // 设置热更新
-    hot: true
-  },
-  plugins: [
-    new VueLoaderPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../src/index.html')
-    })
-  ]
+    hot: true,
+    noInfo: true,
+    proxy: {
+      // '/api': 'http://localhost:3000'
+    },
+    onListening (server) {
+      const { address, port } = server.listeningApp.address()
+      console.log(`http://localhost:${port}`)
+    }
+  }
 }
