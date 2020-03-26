@@ -1,6 +1,8 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ip = require('ip')
+const qrcode = require('qrcode-terminal')
 
 module.exports = {
   mode: 'development', // process.env.NODE_ENV === 'development'
@@ -94,7 +96,12 @@ module.exports = {
       // '/api': 'http://localhost:3000'
     },
     onListening (server) {
-      const { address, port } = server.listeningApp.address()
+      const { port } = server.listeningApp.address()
+      const link = `http://${ip.address()}:${port}`
+      qrcode.generate(link, (qrcode) => {
+        console.log(qrcode)
+        console.log('二维码对应的地址：', link)
+      })
       console.log(`http://localhost:${port}`)
     }
   }
