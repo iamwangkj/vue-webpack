@@ -11,12 +11,11 @@ export const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/android-css',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../pages/About.vue')
+    component: () => import('../pages/android-css.vue')
   },
   {
     path: '/font-size',
@@ -24,7 +23,7 @@ export const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../pages/FontSize.vue')
+    component: () => import('../pages/font-size.vue')
   }
 ]
 
