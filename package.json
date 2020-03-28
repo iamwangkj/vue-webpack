@@ -1,22 +1,13 @@
 {
   "name": "vue-webpack-template",
   "version": "1.0.0",
-  "description": "[中文版](README.md) [英文版](README_EN.md)",
+  "description": "webpack搭建vue",
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.config.js",
     "build": "webpack --config ./build/webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamwangkj/vue-webpack-template.git"
-  },
   "author": "wangkj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamwangkj/vue-webpack-template/issues"
-  },
-  "homepage": "https://github.com/iamwangkj/vue-webpack-template#readme",
   "dependencies": {
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",

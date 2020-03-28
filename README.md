@@ -1,6 +1,4 @@
 # vue-webpack-template
-[中文版](README.md) [英文版](README_EN.md)
-
 webpack从零搭建一个vue、vue-router、vuex的移动端开发模板
 
 ## wepack相关内容
