@@ -93,6 +93,9 @@ module.exports = {
 style-loader：Creates `style` nodes from JS strings
 css-loader：Translates CSS into CommonJS
 
+- 使用postcss-plugin-pxtoviewport适配移动端屏幕
+postcss-plugin-pxtoviewport postcss-loader
+
 ### 启动本地服务器，并支持热更新
 安装webpack-dev-server（npm i -D webpack-dev-server）
 
