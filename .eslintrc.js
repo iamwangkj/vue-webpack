@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     'no-var': 'error',
-    'prefer-const': 'error'
+    'prefer-const': 'error',
+    'no-trailing-spaces': 'off'
   }
 }

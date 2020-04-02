@@ -22,4 +22,11 @@ export default {
   line-height: 1;
   margin-bottom: 10px;
 }
+ul {
+  li {
+    background-color: #09bb07;
+    // color: #fff;
+    overflow: hidden;
+  }
+}
 </style>
