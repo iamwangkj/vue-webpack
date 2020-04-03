@@ -81,7 +81,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/public/index.html')
     }),
-    // extract css into its own file
+    // css打包到指定文件夹
     new MiniCssExtractPlugin({
       filename: './css/[name].css'
     })

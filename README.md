@@ -1,6 +1,11 @@
 # vue-webpack-template
 webpack从零搭建一个vue、vue-router、vuex的移动端开发模板
 
+
+
+打包结果要分目录：index.html css/ js/ img/
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 ## wepack相关内容
 ### 初始化项目
 npm init
