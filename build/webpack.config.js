@@ -3,13 +3,14 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
 const qrcode = require('qrcode-terminal')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development', // process.env.NODE_ENV === 'development'
   entry: path.resolve(__dirname, '../src/main.js'),
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].js'
+    filename: 'js/[name].js'
     // publicPath: process.env.NODE_ENV === 'production' ? '../' : '../'
   },
   resolve: {
@@ -40,6 +41,7 @@ module.exports = {
           // Creates `style` nodes from JS strings
           'style-loader',
           // Translates CSS into CommonJS
+          MiniCssExtractPlugin.loader,
           'css-loader',
           // Compiles Sass to CSS
           {
@@ -78,6 +80,10 @@ module.exports = {
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/public/index.html')
+    }),
+    // extract css into its own file
+    new MiniCssExtractPlugin({
+      filename: './css/[name].css'
     })
   ],
   devServer: {
