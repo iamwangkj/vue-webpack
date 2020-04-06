@@ -19,19 +19,15 @@ export const routes = [
   },
   {
     path: '/font-size',
-    // name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../pages/font-size.vue')
   },
   {
     path: '/line-height',
-    // name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../pages/line-height.vue')
+  },
+  {
+    path: '/date',
+    component: () => import('../pages/date.vue')
   }
 ]
 
