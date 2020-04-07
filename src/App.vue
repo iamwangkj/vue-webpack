@@ -13,4 +13,10 @@ export default {
   margin: 0;
   padding: 0;
 }
+
+input {
+  border-width: 0;
+  // border-bottom: 1px solid #000;
+  border-bottom-width: 2px;
+}
 </style>

@@ -28,6 +28,10 @@ export const routes = [
   {
     path: '/date',
     component: () => import('../pages/date.vue')
+  },
+  {
+    path: '/ppi',
+    component: () => import('../pages/ppi.vue')
   }
 ]
 
