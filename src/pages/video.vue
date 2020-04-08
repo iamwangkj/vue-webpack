@@ -2,7 +2,7 @@
   <div class>
     <h1>video</h1>
     <div style="height: 200px">
-      <p>结论：video在用户还没交互前，是不能直接调用play()</p>
+      <p>结论：video在用户还没交互前，是不能直接调用play()，但是静音情况下，是可以的！！！</p>
     </div>
     <video
       id="live"
@@ -11,7 +11,7 @@
       webkit-playsinline="true"
       playsinline
       loop
-      preload
+      muted
     ></video>
   </div>
 </template>
@@ -21,11 +21,15 @@ export default {
   name: 'fontSize',
   data () {
     return {
-      
+      dom: document.querySelector('#live')
     }
   },
   mounted () {
-    document.querySelector('#live').play()
+    const dom = document.querySelector('#live')
+    dom.addEventListener('canplay', () => {
+      console.log('canplay')
+      dom.play()
+    })
   },
   methods: {
   }
