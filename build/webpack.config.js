@@ -106,9 +106,10 @@ module.exports = {
       const link = `http://${ip.address()}:${port}`
       qrcode.generate(link, (qrcode) => {
         console.log(qrcode)
+        console.log()
         console.log('二维码对应的地址：', link)
       })
-      console.log(`http://localhost:${port}`)
+      // console.log(`http://localhost:${port}`)
     }
   }
 }

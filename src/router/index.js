@@ -32,6 +32,14 @@ export const routes = [
   {
     path: '/ppi',
     component: () => import('../pages/ppi.vue')
+  },
+  {
+    path: '/phone-version',
+    component: () => import('../pages/phone-version.vue')
+  },
+  {
+    path: '/video',
+    component: () => import('../pages/video.vue')
   }
 ]
 
