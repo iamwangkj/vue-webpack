@@ -11,11 +11,11 @@ export const routes = [
     component: Home
   },
   {
-    path: '/android-css',
+    path: '/theme-day-and-night',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../pages/android-css.vue')
+    component: () => import('../pages/theme-day-and-night.vue')
   },
   {
     path: '/font-size',
