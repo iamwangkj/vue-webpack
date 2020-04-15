@@ -11,6 +11,8 @@
       <p>视网膜：326ppi</p>
       <p>LG 21:9：95.80ppi</p>
       <p>imac 27：219.57ppi</p>
+      <p>优派23.6：186.69ppi</p>
+      <p>优派27：163.18ppi</p>
     </div>
   </div>
 </template>
