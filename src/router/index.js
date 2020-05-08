@@ -18,6 +18,10 @@ export const routes = [
     component: () => import('../pages/theme-day-and-night.vue')
   },
   {
+    path: '/long-page',
+    component: () => import('../pages/long-page.vue')
+  },
+  {
     path: '/font-size',
     component: () => import('../pages/font-size.vue')
   },
