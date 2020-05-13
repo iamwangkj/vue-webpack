@@ -1,5 +1,6 @@
 <template>
-  <div class="long">
+  <div class="long">清洁用品趋势1
+    <div class="btn-small"></div>
     <p>顺滑回到top</p>
     <p>b</p>
     <p>2</p>
@@ -136,6 +137,22 @@ export default {
   background-color: #ff00cc;
   position: fixed;
   bottom: 0;
+}
+
+.btn-small1 {
+  width: 170px;
+  height: 62px;
+  border-radius: 8px;
+  background-image: linear-gradient(-35deg, rgb(123,16,150) 0%, rgb(45,22,158) 100%);
+}
+
+.btn-small {
+  width:85px;
+  height:31px;
+  background:linear-gradient(125deg,rgba(123,16,150,1),rgba(45,22,158,1));
+  border-radius:4px;
+  color: #fff;
+  font-size: 12px;
 }
 
 </style>
