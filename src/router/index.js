@@ -44,6 +44,10 @@ export const routes = [
   {
     path: '/video',
     component: () => import('../pages/video.vue')
+  },
+  {
+    path: '/loading',
+    component: () => import('../pages/loading.vue')
   }
 ]
 

@@ -36,7 +36,7 @@ module.exports = {
         }
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s[ac]ss|css)$/i,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
@@ -104,11 +104,12 @@ module.exports = {
     onListening (server) {
       const { port } = server.listeningApp.address()
       const link = `http://${ip.address()}:${port}`
-      qrcode.generate(link, (qrcode) => {
-        console.log(qrcode)
-        console.log()
-        console.log('二维码对应的地址：', link)
-      })
+      // qrcode.generate(link, (qrcode) => {
+      //   console.log(qrcode)
+      //   console.log()
+      //   console.log('二维码对应的地址：', link)
+      // })
+      console.log('二维码对应的地址：', link)
       // console.log(`http://localhost:${port}`)
     }
   }
