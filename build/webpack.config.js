@@ -2,7 +2,6 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
-const qrcode = require('qrcode-terminal')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -94,7 +93,7 @@ module.exports = {
     // 设置端口
     port: 3000,
     // 设置自动拉起浏览器
-    open: false,
+    open: true,
     // 设置热更新
     hot: true,
     noInfo: true,
@@ -104,13 +103,7 @@ module.exports = {
     onListening (server) {
       const { port } = server.listeningApp.address()
       const link = `http://${ip.address()}:${port}`
-      // qrcode.generate(link, (qrcode) => {
-      //   console.log(qrcode)
-      //   console.log()
-      //   console.log('二维码对应的地址：', link)
-      // })
-      console.log('二维码对应的地址：', link)
-      // console.log(`http://localhost:${port}`)
+      console.log('预览地址：', link)
     }
   }
 }

@@ -48,6 +48,10 @@ export const routes = [
   {
     path: '/loading',
     component: () => import('../pages/loading.vue')
+  },
+  {
+    path: '/border',
+    component: () => import('../pages/border.vue')
   }
 ]
 
