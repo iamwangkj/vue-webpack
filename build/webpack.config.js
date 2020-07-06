@@ -63,7 +63,7 @@ module.exports = {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000
+          // limit: 10000
         }
       },
       {
@@ -93,7 +93,7 @@ module.exports = {
     // 设置端口
     port: 3000,
     // 设置自动拉起浏览器
-    open: true,
+    open: false,
     // 设置热更新
     hot: true,
     noInfo: true,

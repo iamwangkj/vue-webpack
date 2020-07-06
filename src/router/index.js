@@ -52,6 +52,10 @@ export const routes = [
   {
     path: '/border',
     component: () => import('../pages/border.vue')
+  },
+  {
+    path: '/audio',
+    component: () => import('../pages/audio.vue')
   }
 ]
 
