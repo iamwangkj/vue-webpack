@@ -56,6 +56,15 @@ export const routes = [
   {
     path: '/audio',
     component: () => import('../pages/audio.vue')
+  },
+  {
+    path: '/click',
+    component: () => import('../pages/click.vue')
+  },
+  ,
+  {
+    path: '/chart',
+    component: () => import('../pages/chart.vue')
   }
 ]
 

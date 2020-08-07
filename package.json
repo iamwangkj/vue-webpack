@@ -9,6 +9,7 @@
   },
   "author": "wangkj",
   "dependencies": {
+    "echarts": "^4.8.0",
     "moment": "^2.24.0",
     "vue": "^2.6.11",
     "vue-infinite-loading": "^2.4.5",
