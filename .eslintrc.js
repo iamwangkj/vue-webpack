@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'no-var': 'error',
     'prefer-const': 'error',
-    'no-trailing-spaces': 'off'
+    'no-trailing-spaces': 'off',
+    'camelcase': 0
   }
 }
