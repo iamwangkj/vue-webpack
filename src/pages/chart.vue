@@ -9,7 +9,7 @@
 <script>
 import echarts from 'echarts'
 import data_baoan from '../json/宝安区.json'
-import data_huizhou from '../json/惠州二手房.json'
+import data_huizhou from '../json/zs-ershoufang.json'
 import _ from 'lodash'
 export default {
   mounted () {
@@ -84,7 +84,7 @@ export default {
     },
     drawChartHouseHuizhou () {
       let arr = _.sortBy(data_huizhou, [function (o) { return o.unitPrice }])
-      arr = _.slice(arr, 0, 50)
+      arr = _.slice(arr, 0, 100)
       const xAxisData = arr.map((item) => {
         return item.position
       })
@@ -97,7 +97,7 @@ export default {
       // 指定图表的配置项和数据
       const option = {
         title: {
-          text: '惠州二手房价格对比'
+          text: '二手房价格对比'
         },
         tooltip: {},
         legend: {
