@@ -61,10 +61,13 @@ export const routes = [
     path: '/click',
     component: () => import('../pages/click.vue')
   },
-  ,
   {
     path: '/chart',
     component: () => import('../pages/chart.vue')
+  },
+  {
+    path: '/canvas',
+    component: () => import('../pages/canvas.vue')
   }
 ]
 
